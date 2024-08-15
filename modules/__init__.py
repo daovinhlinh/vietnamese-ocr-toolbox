@@ -14,7 +14,7 @@ import modules.ocr as ocr
 import modules.retrieval as retrieval
 import modules.correction as correction
 from tool.config import Config 
-from tool.utils import download_pretrained_weights
+from tool.utils import *
 
 
 CACHE_DIR = '.cache'
