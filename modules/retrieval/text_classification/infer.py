@@ -74,7 +74,7 @@ class PhoBERT:
         model_state = meta_data["model_state_dict"]
 
         self.model = get_instance(self.cfg["model"]).cuda()
-        self.model.load_state_dict(model_state)
+        self.model.load_state_dict(model_state, strict=False)
 
     def __call__(self, texts):
         dataset = MCOCRDataset_from_list(
